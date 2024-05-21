@@ -1,14 +1,13 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\LecturerController;
-use App\Http\Controllers\NewsController;
 use App\Http\Controllers\TridharmaController;
-use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('beranda');
-});
+Route::get('/', [App\Http\Controllers\BerandaController::class, 'index'])->name('beranda');
 
 Route::get('/struktur-organisasi', fn () => view('struktur-organisasi'));
 Route::get('/sejarah-tujuan', fn () => view('sejarah-tujuan'));
