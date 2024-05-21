@@ -3,7 +3,7 @@
         <div class="w-full uppercase">
             <h3 class="text-xl md:text-3xl font-medium md:font-semibold text-slate-800">Hi, Selamat datang di</h3>
             <h1 class="text-3xl md:text-6xl font-bold md:font-extrabold text-slate-800">
-                Jurusan Teknik Informatika
+                Jurusan Teknik Informatika Tes
             </h1>
             <h2 class="text-xl font-medium md:text-3xl md:font-bold text-slate-800">Fakultas Teknik, Universitas Haluoleo, Kendari</h2>
         </div>
