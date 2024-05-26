@@ -12,11 +12,11 @@
             <article>
                 <h5 class="mt-4 text-slate-800 font-semibold">Sasaran</h5>
                 <p class="mt-4 text-slate-700">
-                    Program Studi S1 Teknik Informatika dituntut untuk mampu menghasilkan sumberdaya manusia yang dibutuhkan dunia kerja dengan kualifikasi yang sesuai dengan kebutuhan stakeholder.
+                    {!! $goals !!}
                 </p>
                 <h5 class="mt-4 text-slate-800 font-semibold">Strategi</h5>
                 <p class="mt-4 text-slate-700">
-                    Strategi yang diterapkan adalah meningkatkan jumlah mahasiswa yang ditampung, meningkatkan jumlah dosen tetap dan meningkatkan sarana dan prasarana perkuliahan. Langkah ini tidak secara langsung diikuti oleh peningkatan daya tampung (kapasitas) yakni adanya keseimbangan antara peningkatan kuantitas dan peningkatan kualitas.
+                    {!! $strategies !!}
                 </p>
             </article>
         </div>

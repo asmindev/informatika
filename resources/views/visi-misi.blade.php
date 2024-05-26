@@ -12,30 +12,10 @@
             <article>
                 <h5 class="mt-4 text-slate-800 font-semibold">Visi</h5>
                 <p class="mt-4 text-slate-700">
-                    Pada tahun 2019 menjadi Program Studi Teknik Informatika terdepan di tingkat Indonesia Timur, yang menghasilkan sumber daya manusia profesional dan berdaya saing tinggi dalam pengembangan Teknologi Informasi dan Komunikasi di wilayah pedesaan dan pesisir.
+                    {!! $vision !!}
                 </p>
                 <h5 class="mt-4 text-slate-800 font-semibold">Misi</h5>
-                <ul class="mt-4 text-slate-700">
-                    <li>
-                        Menyelenggarakan pendidikan dan pengajaran berbasis riset bidang informatika dengan memanfaatkan kemajuan teknologi informasi dan komunikasi.
-                    </li>
-                    <li>
-                        Mengembangkan penelitian unggulan yang berorientasi pada publikasi dan perolehan hak atas kekayaan intelektual.
-                    </li>
-                    <li>
-                        Menerapkan hasil-hasil penelitian dan produk unggulan lainnya bagi kesejahteraan institusi, masyarakat dan kemajuan IPTEKS.
-                    </li>
-                    <li>
-                        Menyelenggarakan sistem tata kelola program studi yang transparan dan akuntabel sehingga mampu memberikan pelayanan prima dalam pendidikan.
-                    </li>
-                    <li>
-                        Mengembangkan potensi mahasiswa di bidang Teknologi Informasi dan Komunikasi wilayah pedesaan dan pesisir, untuk membangun citra program studi di tingkat Indonesia Timur.
-                    </li>
-                    <li>
-                        Mengembangkan kampus hijau untuk mendukung penyelenggaraan tridharma perguruan tinggi.
-                    </li>
-
-                </ul>
+                {!! $mission !!}
             </article>
         </div>
     </section>
