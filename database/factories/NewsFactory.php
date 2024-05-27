@@ -20,7 +20,7 @@ class NewsFactory extends Factory
             //
             'title' => $this->faker->sentence(2),
             'content' => $this->faker->paragraph(5),
-            'image' => 'https://source.unsplash.com/random',
+            'image' => 'https://picsum.photos/800',
             'date' => $this->faker->date(),
         ];
     }

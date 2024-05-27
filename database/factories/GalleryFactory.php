@@ -19,7 +19,7 @@ class GalleryFactory extends Factory
         return [
             //
             'title' => $this->faker->sentence(),
-            'image' => 'https://source.unsplash.com/random',
+            'image' => 'https://picsum.photos/800',
         ];
     }
 }
