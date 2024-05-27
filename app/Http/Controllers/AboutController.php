@@ -10,24 +10,40 @@ class AboutController extends Controller
     public function sejarahTujuan()
     {
         $data = About::first();
-        $purpose = $data->purpose;
-        $history = $data->history;
+        if ($data) {
+            $purpose = $data->purpose;
+            $history = $data->history;
+        } else {
+            $purpose = null;
+            $history = null;
+        }
         return view('sejarah-tujuan', compact('purpose', 'history'));
     }
 
     public function visiMisi()
     {
         $data = About::first();
-        $vision = $data->vision;
-        $mission = $data->mission;
+        if ($data) {
+
+            $vision = $data->vision;
+            $mission = $data->mission;
+        } else {
+            $vision = null;
+            $mission = null;
+        }
         return view('visi-misi', compact('vision', 'mission'));
     }
 
     public function sasaranStrategi()
     {
         $data = About::first();
-        $goals = $data->goals;
-        $strategies = $data->strategy;
+        if ($data) {
+            $goals = $data->goals;
+            $strategies = $data->strategy;
+        } else {
+            $goals = null;
+            $strategies = null;
+        }
         return view('sasaran-strategi', compact('goals', 'strategies'));
     }
 }
