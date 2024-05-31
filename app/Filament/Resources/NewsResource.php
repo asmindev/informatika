@@ -31,8 +31,8 @@ class NewsResource extends Resource
                     ->required(),
 
 
-                Forms\Components\DateTimePicker::make('date')
-                    ->label('Tgl Berita')
+                Forms\Components\DatePicker::make('date')
+                    ->label('Tanggal Berita')
                     ->required(),
 
                 Forms\Components\FileUpload::make('image')

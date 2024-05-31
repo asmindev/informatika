@@ -14,6 +14,7 @@ class News extends Model
     protected $casts = [
         'id' => 'string',
     ];
+    protected $keyType = 'string';
     protected static function boot()
     {
         parent::boot();

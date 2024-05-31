@@ -1,5 +1,6 @@
 <x-layout>
-    <section class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[80vh] flex items-center">
+    <section
+        class="relative px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[70vh] flex items-center">
         <div class="w-full uppercase">
             <h3 class="text-xl md:text-3xl font-medium md:font-semibold text-slate-800">Hi, Selamat datang di</h3>
             <h1 class="text-3xl md:text-6xl font-bold md:font-extrabold text-slate-800">
@@ -8,47 +9,42 @@
             <h2 class="text-xl font-medium md:text-3xl md:font-bold text-slate-800">Fakultas Teknik, Universitas
                 Haluoleo, Kendari</h2>
         </div>
-    </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#0099ff" fill-opacity="1"
-            d="M0,160L21.8,170.7C43.6,181,87,203,131,202.7C174.5,203,218,181,262,186.7C305.5,192,349,224,393,218.7C436.4,213,480,171,524,176C567.3,181,611,235,655,234.7C698.2,235,742,181,785,176C829.1,171,873,213,916,229.3C960,245,1004,235,1047,197.3C1090.9,160,1135,96,1178,90.7C1221.8,85,1265,139,1309,186.7C1352.7,235,1396,277,1418,298.7L1440,320L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
-        </path>
-    </svg>
-    <section class="bg-blue-100">
-        <div class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[80vh] flex items-center">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
-                <div class="bg-white p-6 rounded-xl">
-                    <img class="rounded w-36 h-36" src="https://i.pravatar.cc/150?u={{ rand() }}"
-                        alt="Extra large avatar">
-                </div>
-                <div class="bg-white p-6 rounded-xl">
-                    <a href="https://www.haloomedia.com/">
-                        <img class="rounded w-36 h-36" src="/docs/images/people/profile-picture-5.jpg"
-                            alt="Extra large avatar">
+        <div class="absolute bottom-0 h-12 w-full">
+            <div class="w-full bg-blue-600 rounded-xl">
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 text-center">
+                    <a href="https://ta.ti.eng.uho.ac.id/" class="p-8 bg-white rounded-lg">
+                        <h1>Sistem Monitoring TA</h1>
                     </a>
-                </div>
-                <div class="bg-white p-6 rounded-xl">
-                    <a href="https://www.haloomedia.com/">
-                        <img class="rounded w-36 h-36" src="/docs/images/people/profile-picture-5.jpg"
-                            alt="Extra large avatar">
+                    <a href="#" class="p-8 bg-white rounded-lg">
+                        <h1>Sistem Evaluasi Kepuasan</h1>
                     </a>
-                </div>
-                <div class="bg-white p-6 rounded-xl">
-                    <a href="https://www.haloomedia.com/">
-                        <img class="rounded w-36 h-36" src="/docs/images/people/profile-picture-5.jpg"
-                            alt="Extra large avatar">
+                    <a href="#" class="p-8 bg-white rounded-lg">
+                        <h1>E-Librarry</h1>
+                    </a>
+                    <a href="#" class="p-8 bg-white rounded-lg">
+                        <h1>Sistem Monitoring Perkuliahan</h1>
+                    </a>
+                    <a href="#" class="p-8 bg-white rounded-lg">
+                        <h1>Jurnal Semantik</h1>
+                    </a>
+                    <a href="#" class="p-8 bg-white rounded-lg">
+                        <h1>Jurnal Animator</h1>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="h-12"></div>
-
-    <section class="bg-blue-100">
-
+    <section class="relative bg-blue-100 w-full -z-10">
+        <div class="absolute -top-56 w-full h-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class="fill-blue-100" fill-opacity="1"
+                    d="M0,192L48,176C96,160,192,128,288,122.7C384,117,480,139,576,160C672,181,768,203,864,181.3C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
         <div class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[80vh] flex items-center">
-            <div class="w-full flex justify-between items-center flex-col md:flex-row">
+            <div class="mt-64 w-full flex justify-between items-center flex-col md:flex-row">
                 <div
                     class="w-full md:w-1/2 relative rounded-full overflow-hidden after:absolute after:bg-indigo-500 after:bottom-0 after:w-full after:h-12 after:left-1/2  before:absolute before:bg-orange-600 before:bottom-12 before:w-full before:h-24 before:md:h-32">
                     <img class="w-full h-full object-cover scale-150" src="{{ asset('storage/file.png') }}"
@@ -87,28 +83,113 @@
             </div>
         </div>
     </section>
-
-    <section class="w-full md:w-11/12 lg:w-10/12 mx-auto px-4">
-        <div class="mt-24 py-12 px-8 bg-blue-50 rounded-xl">
-            <h1 class="text-3xl font-bold">Berita Teknik Informatika</h1>
-            <p class="text-slate-600 mt-2">Berita terbaru di Jurusan Teknik Informatika</p>
+    <section
+        class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[70vh] flex flex-col justify-center items-center">
+        <div class="w-full flex justify-center items-center flex-col">
+            <h1 class="text-3xl font-bold underline uppercase">Dosen</h1>
         </div>
-        <div class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
-            @foreach ($news as $n)
-                <a href="/berita/{{ $n->id }}"
-                    class="w-full h-fit rounded-xl overflow-hidden border border-slate-200">
-                    <img src="{{ $n->image }}" alt="{{ $n->title }}" class="w-full h-30 object-cover">
-                    <div class="w-full h-full">
-                        <div class="py-6 px-4">
-                            <div class="w-full flex justify-between">
-                                <h1 class="text-slate-800 font-medium text-lg">{{ $n->title }}</h1>
-                                <h2 class="text-slate-600 text-sm">{{ $n->date }}</h2>
+        <div id="image-slider" class="splide w-full" aria-label="Dosen IT">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    @foreach ($lecturers as $lecturer)
+                        <li class="splide__slide">
+                            <div class="p-4">
+                                <img src="{{ $lecturer->image }}" class="w-full">
+                                <div>
+                                    <h1 class="text-base font-bold">{{ $lecturer->name }}</h1>
+                                </div>
                             </div>
-                            <h3 class="text-slate-600 text-sm line-clamp-2">{{ $n->content }}</h3>
-                        </div>
-                    </div>
-                </a>
-            @endforeach
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </section>
+    <section
+        class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[70vh] flex flex-col justify-center items-center">
+        <div class="w-full flex justify-center items-center flex-col">
+            <h1 class="text-3xl font-bold underline uppercase">Prestasi</h1>
+        </div>
+        <ul class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            @foreach ($achievments as $achievment)
+                <li>
+                    <a href="/prestasi/{{ $achievment->id }}" target="_blank"
+                        class="w-full h-full bg-slate-200 rounded-lg p-4 flex flex-col justify-center items-center gap-y-2">
+                        <img src="{{ $achievment->image }}" alt="{{ $achievment->title }}">
+                        <h1 class="text-lg font-bold">{{ $achievment->title }}</h1>
+                        <p class="text-sm">{{ $achievment->description }}</p>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+        <div class="my-6">
+            <a href="/prestasi" class="w-full py-4 px-8 bg-slate-200 rounded-lg text-center font-bold">Lihat Semua
+                Prestasi</a>
+        </div>
+    </section>
+    <section
+        class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[70vh] flex flex-col justify-center items-center">
+        <div class="flex gap-4">
+            <div class="w-2/3">
+                <div>
+                    <h1 class="text-3xl font-bold uppercase">Berita</h1>
+                </div>
+                <div>
+                    <ul class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        @foreach ($news as $new)
+                            <li
+                                class="w-full h-full bg-slate-200 rounded-lg p-4 flex flex-col justify-center items-center gap-y-2">
+                                <a href="/berita/{{ $new->id }}" target="_blank"
+                                    class="w-full h-full bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center gap-y-2">
+                                    <img src="{{ $new->image }}" alt="{{ $new->title }}"
+                                        class="w-full h-full object-cover">
+                                    <h1 class="text-md">{{ $new->title }}</h1>
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                    <div class="my-6">
+                        <a href="/berita" class="w-full py-4 px-8 bg-slate-200 rounded-lg text-center font-bold">Lihat
+                            Semua Berita</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3">
+                <div>
+                    <h1 class="text-3xl font-bold uppercase">Pengumuman</h1>
+                </div>
+                <div class="w-full my-12 px-4 py-3 bg-slate-200 divide-gray-800 divide-y flex flex-col gap-y-2 rounded">
+                    @foreach ($announcements as $announcement)
+                        <span class="w-full h-full block py-2">
+                            <a href="#" target="_blank" class="w-full h-full text-sm">
+                                <h1 class="text-md">{{ $announcement->title }}</h1>
+                            </a>
+                        </span>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[70vh] flex flex-col justify-center items-center">
+        <div class="w-full flex justify-center items-center flex-col">
+            <h1 class="text-3xl font-bold underline uppercase">Galeri</h1>
+        </div>
+        <ul class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            @foreach ($galleries as $galery)
+                <li>
+                    <a href="/prestasi/{{ $galery->id }}" target="_blank"
+                        class="w-full h-full bg-slate-200 rounded-lg p-4 flex flex-col justify-center items-center gap-y-2">
+                        <img src="{{ $galery->image }}" alt="{{ $galery->title }}" class="w-full h-72 object-cover">
+                        <h1 class="text-base">{{ $galery->title }}</h1>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+        <div class="my-6">
+            <a href="/galeri" class="w-full py-4 px-8 bg-slate-200 rounded-lg text-center font-bold">Lihat Semua
+                Galeri</a>
+        </div>
+    </section>
+    @vite('resources/js/corousel.js')
 </x-layout>

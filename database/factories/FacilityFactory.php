@@ -20,7 +20,7 @@ class FacilityFactory extends Factory
             //
             'name' => $this->faker->name(),
             'description' => $this->faker->text(),
-            'photo' => 'https://source.unsplash.com/random',
+            'photo' => 'https://picsum.photos/800',
             'type' => $this->faker->randomElement(['kelas', 'laboratorium']),
             'created_at' => now(),
             'updated_at' => now(),

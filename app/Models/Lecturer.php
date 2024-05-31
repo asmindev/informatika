@@ -13,4 +13,13 @@ class Lecturer extends Model
     {
         return $this->hasMany(Tridharma::class);
     }
+    // get image attribute
+    public function getImageAttribute($value)
+    {
+        if (str_starts_with($value, 'http')) {
+            return $value;
+        } else {
+            return asset("storage/$value");
+        }
+    }
 }
