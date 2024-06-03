@@ -1,39 +1,68 @@
 <x-layout>
-    <section class="relative px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[70vh] flex items-center">
-        <div class="w-full uppercase">
-            <h3 class="text-xl md:text-3xl font-medium md:font-semibold text-slate-800">Hi, Selamat datang di</h3>
-            <h1 class="text-3xl md:text-6xl font-bold md:font-extrabold text-slate-800">
-                Jurusan Teknik Informatika
-            </h1>
-            <h2 class="text-xl font-medium md:text-3xl md:font-bold text-slate-800">Fakultas Teknik, Universitas Haluoleo, Kendari</h2>
-        </div>
-        <div class="absolute bottom-0 h-12 w-full">
-            <div class="w-full bg-blue-600 rounded-xl">
-                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 text-center">
-                    <a href="https://ta.ti.eng.uho.ac.id/" class="p-8 bg-white rounded-lg">
-                        <h1>Sistem Monitoring TA</h1>
-                    </a>
-                    <a href="#" class="p-8 bg-white rounded-lg">
-                        <h1>Sistem Evaluasi Kepuasan</h1>
-                    </a>
-                    <a href="#" class="p-8 bg-white rounded-lg">
-                        <h1>E-Librarry</h1>
-                    </a>
-                    <a href="#" class="p-8 bg-white rounded-lg">
-                        <h1>Sistem Monitoring Perkuliahan</h1>
-                    </a>
-                    <a href="https://ojs.uho.ac.id/index.php/semantik" class="p-8 bg-white rounded-lg">
-                        <h1>Jurnal Semantik</h1>
-                    </a>
-                    <a href="https://animator.uho.ac.id" class="p-8 bg-white rounded-lg">
-                        <h1>Jurnal Animator</h1>
-                    </a>
+    <!-- Slider -->
+    <div data-hs-carousel='{
+    "loadingClasses": "opacity-0",
+    "isAutoPlay": true
+  }' class="relative h-[50vh] md:h-[70vh]">
+        <div class="hs-carousel relative overflow-hidden w-full h-full bg-white">
+            <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+                <div class="hs-carousel-slide">
+                    <div class="flex justify-center h-full bg-gray-100 dark:bg-neutral-900">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1716847214506-d93ba9fe5be4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="first slide">
+                    </div>
+                </div>
+                <div class="hs-carousel-slide">
+                    <div class="flex justify-center h-full dark:bg-neutral-800">
+                        <img src="https://images.unsplash.com/photo-1716831320710-5b159b831fdb?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Second slide" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="hs-carousel-slide">
+                    <div class="flex justify-center h-full dark:bg-neutral-700">
+                        <img src="https://images.unsplash.com/photo-1717200996213-84a62230d162?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Third slide" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="absolute h-full w-full top-0 flex justify-center items-center bg-black/50">
+            <section class="relative px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[70vh] flex items-center">
+                <div class="w-full uppercase">
+                    <h3 class="text-xl md:text-3xl font-medium md:font-semibold text-gray-100">Hi, Selamat datang di</h3>
+                    <h1 class="text-3xl md:text-6xl font-bold md:font-extrabold text-gray-50">
+                        Jurusan Teknik Informatika
+                    </h1>
+                    <h2 class="text-xl font-medium md:text-3xl md:font-bold text-gray-100">Fakultas Teknik, Universitas Haluoleo, Kendari</h2>
+                </div>
+                <div class="absolute bottom-0 h-12 md:w-full z-50">
+                    <div class="w-full bg-blue-600 rounded-xl">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 text-center">
+                            <a href="https://ta.ti.eng.uho.ac.id/" class="p-4 md:p-8 bg-white rounded-lg">
+                                <h1 class="text-sm md:text-base">Sistem Monitoring TA</h1>
+                            </a>
+                            <a href="#" class="p-4 md:p-8 bg-white rounded-lg">
+                                <h1 class="text-sm md:text-base">Sistem Evaluasi Kepuasan</h1>
+                            </a>
+                            <a href="#" class="p-4 md:p-8 bg-white rounded-lg">
+                                <h1 class="text-sm md:text-base">E-Librarry</h1>
+                            </a>
+                            <a href="#" class="p-4 md:p-8 bg-white rounded-lg">
+                                <h1 class="text-sm md:text-base">Sistem Monitoring Perkuliahan</h1>
+                            </a>
+                            <a href="https://ojs.uho.ac.id/index.php/semantik" class="p-4 md:p-8 bg-white rounded-lg">
+                                <h1 class="text-sm md:text-base">Jurnal Semantik</h1>
+                            </a>
+                            <a href="https://animator.uho.ac.id" class="p-4 md:p-8 bg-white rounded-lg">
+                                <h1 class="text-sm md:text-base">Jurnal Animator</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- End Slider -->
 
-    <section class="relative bg-blue-100 w-full -z-10">
+
+    <section class="relative bg-blue-100 w-full">
         <div class="absolute -top-56 w-full h-full">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path class="fill-blue-100" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,122.7C384,117,480,139,576,160C672,181,768,203,864,181.3C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -78,9 +107,9 @@
                     @foreach ($lecturers as $lecturer)
                     <li class="splide__slide">
                         <div class="p-4">
-                            <img src="{{  $lecturer->image }}" class="w-full">
-                            <div>
-                                <h1 class="text-base font-bold">{{ $lecturer->name }}</h1>
+                            <img src="{{  $lecturer->image }}" class="w-full h-40 md:h-56 object-cover">
+                            <div class="mt-2 mb-4">
+                                <h1 class="text-sm md:text-base font-bold">{{ $lecturer->name }}</h1>
                             </div>
                         </div>
                     </li>
@@ -109,10 +138,10 @@
         </div>
     </section>
     <section class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[50vh] md:min-h-[70vh] flex flex-col justify-center items-center">
-        <div class="flex gap-4">
-            <div class="w-2/3">
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-2/3">
                 <div>
-                    <h1 class="text-3xl font-bold uppercase">Berita</h1>
+                    <h1 class="text-center md:text-left text-3xl font-bold uppercase">Berita</h1>
                 </div>
                 <div>
                     <ul class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -130,9 +159,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-1/3">
+            <div class="w-full md:w-1/3">
                 <div>
-                    <h1 class="text-3xl font-bold uppercase">Pengumuman</h1>
+                    <h1 class="text-center md:text-left text-3xl font-bold uppercase">Pengumuman</h1>
                 </div>
                 <div class="w-full my-12 px-4 py-3 bg-slate-200 divide-gray-800 divide-y flex flex-col gap-y-2 rounded">
                     @foreach ($announcements as $announcement)
