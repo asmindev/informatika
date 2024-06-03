@@ -17,7 +17,7 @@ use App\Models\Gallery;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/struktur-organisasi', fn () => view('struktur-organisasi'));
+Route::get('/struktur-organisasi', [AboutController::class, 'strukturOrganisasi']);
 Route::get('/sejarah-tujuan', [AboutController::class, 'sejarahTujuan']);
 Route::get('/visi-misi', [AboutController::class, 'visiMisi']);
 Route::get('/sasaran-strategi', [AboutController::class, 'sasaranStrategi']);

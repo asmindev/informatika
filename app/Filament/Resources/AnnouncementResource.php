@@ -32,7 +32,7 @@ class AnnouncementResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->label('Judul')
                     ->required(),
-                Forms\Components\TextInput::make('schedule')
+                Forms\Components\TimePicker::make('schedule')
                     ->label('Jadwal')
                     ->required(),
                 Forms\Components\DatePicker::make('date')
@@ -59,7 +59,7 @@ class AnnouncementResource extends Resource
                     ->searchable()
                     ->sortable(),
 
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 //   filter by date
                 Tables\Filters\SelectFilter::make('date')

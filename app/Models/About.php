@@ -19,4 +19,13 @@ class About extends Model
         }
         parent::save($options);
     }
+    public function getStructureAttribute($value)
+    {
+        // if value starts with http
+        if (str_starts_with($value, 'http')) {
+            return $value;
+        } else {
+            return asset("storage/$value");
+        }
+    }
 }

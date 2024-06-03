@@ -15,4 +15,13 @@ class Tridharma extends Model
     {
         return $this->belongsTo(Lecturer::class);
     }
+    public function getFileAttribute($value)
+    {
+        // if value starts with http
+        if (str_starts_with($value, 'http')) {
+            return $value;
+        } else {
+            return asset("storage/$value");
+        }
+    }
 }

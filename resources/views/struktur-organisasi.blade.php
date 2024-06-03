@@ -5,7 +5,7 @@
             <p class="text-slate-700 mt-4">Berikut adalah struktur organisasi Jurusan Teknik Informatika Universitas Halu Oleo</p>
         </div>
         <div class="my-12">
-            <img src="{{asset('storage/struktur.png')}}" alt="Struktur Organisasi">
+            <img src="{{$structure}}" alt="Struktur Organisasi">
         </div>
     </section>
 </x-layout>

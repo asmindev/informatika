@@ -22,10 +22,10 @@
                     <a href="#" class="p-8 bg-white rounded-lg">
                         <h1>Sistem Monitoring Perkuliahan</h1>
                     </a>
-                    <a href="#" class="p-8 bg-white rounded-lg">
+                    <a href="https://ojs.uho.ac.id/index.php/semantik" class="p-8 bg-white rounded-lg">
                         <h1>Jurnal Semantik</h1>
                     </a>
-                    <a href="#" class="p-8 bg-white rounded-lg">
+                    <a href="https://animator.uho.ac.id" class="p-8 bg-white rounded-lg">
                         <h1>Jurnal Animator</h1>
                     </a>
                 </div>

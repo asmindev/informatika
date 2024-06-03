@@ -30,6 +30,7 @@ class DocumentResource extends Resource
                 Forms\Components\FileUpload::make('file')
                     ->label('File')
                     ->required(),
+                // when updatae use old value
                 Forms\Components\Textarea::make('description')
                     ->label('Description')
                     ->required(),
@@ -45,12 +46,10 @@ class DocumentResource extends Resource
                     ->label('Name')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('file')
-                    ->label('File'),
                 Tables\Columns\TextColumn::make('description')
                     ->label('Description')
                     ->words(10),
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 //
             ])
