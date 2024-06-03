@@ -10,7 +10,7 @@
         <div class="absolute bottom-0 h-12 w-full">
             <div class="w-full bg-blue-600 rounded-xl">
                 <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 text-center">
-                    <a href="#" class="p-8 bg-white rounded-lg">
+                    <a href="https://ta.ti.eng.uho.ac.id/" class="p-8 bg-white rounded-lg">
                         <h1>Sistem Monitoring TA</h1>
                     </a>
                     <a href="#" class="p-8 bg-white rounded-lg">
