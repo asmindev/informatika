@@ -64,7 +64,7 @@ class FacilityResource extends Resource
                     ->label('Deskripsi')
                     ->words(10)
 
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 // filter by type
                 Tables\Filters\SelectFilter::make('type')

@@ -44,7 +44,7 @@ class GalleryResource extends Resource
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->label('Created'),
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 //
             ])

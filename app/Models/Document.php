@@ -10,13 +10,6 @@ class Document extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-    protected static function boot()
-    {
-        parent::boot();
-        static::creating(function ($model) {
-            $model->id = (string) Uuid::uuid4();
-        });
-    }
     public function getFileAttribute($value)
     {
         // if value starts with http

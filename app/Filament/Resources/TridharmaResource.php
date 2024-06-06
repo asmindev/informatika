@@ -91,7 +91,7 @@ class TridharmaResource extends Resource
                     ->label('Dosen')
                     ->relationship('lecturer', 'name'),
 
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])

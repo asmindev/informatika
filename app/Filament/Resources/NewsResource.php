@@ -78,7 +78,7 @@ class NewsResource extends Resource
                 Tables\Columns\TextColumn::make('date')
                     ->label('Tgl Berita')
                     ->sortable()
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 //
                 Filter::make('title')

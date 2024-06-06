@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('vision');
             $table->text('target');
             $table->text('strategy');
+            $table->text('structure');
             $table->timestamps();
         });
     }

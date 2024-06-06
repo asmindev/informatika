@@ -35,7 +35,7 @@
                                 <line x1="16" x2="8" y1="17" y2="17"></line>
                                 <line x1="10" x2="8" y1="9" y2="9"></line>
                             </svg>
-                            {{ $item["file"] }}
+                            Download
                         </p>
                         <h3 class="mt-1 font-medium text-slate-800 dark:text-neutral-400">
                             {{ $item->title }}

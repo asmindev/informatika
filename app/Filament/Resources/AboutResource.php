@@ -36,10 +36,14 @@ class AboutResource extends Resource
                     ->label('Visi')
                     ->required(),
                 Forms\Components\RichEditor::make('target')
-                    ->label('Target')
+                    ->label('Sasaran')
                     ->required(),
                 Forms\Components\RichEditor::make('strategy')
                     ->label('Strategi')
+                    ->required(),
+                Forms\Components\FileUpload::make('structure')
+                    ->label('Struktur Organisasi')
+                    ->image()
                     ->required(),
             ]);
     }
