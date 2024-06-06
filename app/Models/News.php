@@ -10,18 +10,7 @@ class News extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
-    protected $casts = [
-        'id' => 'string',
-    ];
-    protected $keyType = 'string';
-    protected static function boot()
-    {
-        parent::boot();
-        static::creating(function ($model) {
-            $model->id = (string) Uuid::uuid4();
-        });
-    }
+    protected $guarded = ['id'];
     // get image attribute
     public function getImageAttribute($value)
     {

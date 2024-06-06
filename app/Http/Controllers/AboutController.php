@@ -38,12 +38,22 @@ class AboutController extends Controller
     {
         $data = About::first();
         if ($data) {
-            $goals = $data->goals;
+            $goals = $data->target;
             $strategies = $data->strategy;
         } else {
             $goals = null;
             $strategies = null;
         }
         return view('sasaran-strategi', compact('goals', 'strategies'));
+    }
+    public function strukturOrganisasi()
+    {
+        $data = About::first();
+        if ($data) {
+            $structure = $data->structure;
+        } else {
+            $structure = null;
+        }
+        return view('struktur-organisasi', compact('structure'));
     }
 }

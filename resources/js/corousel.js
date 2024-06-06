@@ -6,7 +6,7 @@ const splide = new Splide("#image-slider", {
     type: "loop",
     drag: "free",
     focus: "center",
-    perPage: 6,
+    perPage: window.innerWidth > 768 ? 6 : 2,
     autoScroll: {
         speed: 1,
     },

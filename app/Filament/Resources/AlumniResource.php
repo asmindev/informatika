@@ -57,7 +57,7 @@ class AlumniResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('graduation_year')
                     ->sortable()
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 //
             ])

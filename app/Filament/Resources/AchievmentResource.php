@@ -24,6 +24,23 @@ class AchievmentResource extends Resource
         return $form
             ->schema([
                 //
+                //     $table->string('title');
+                // $table->string('description');
+                // $table->string('image');
+                // $table->integer('year');
+                Forms\Components\TextInput::make('title')
+                    ->label('Title')
+                    ->required(),
+                Forms\Components\TextInput::make('description')
+                    ->label('Dekripsi')
+                    ->required(),
+                Forms\Components\FileUpload::make('image')
+                    ->label('Gambar')
+                    ->image()
+                    ->required(),
+                Forms\Components\DatePicker::make('year')
+                    ->label('Tahun')
+                    ->required(),
             ]);
     }
 
@@ -31,8 +48,21 @@ class AchievmentResource extends Resource
     {
         return $table
             ->columns([
-                //
-            ])
+                Tables\Columns\ImageColumn::make('image')
+                    ->label('Gambar'),
+                Tables\Columns\TextColumn::make('title')
+                    ->label('Judul')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('year')
+                    ->label('Tahun')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('description')
+                    ->label('Dekripsi')
+                    ->sortable()
+                    ->searchable(),
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 //
             ])
