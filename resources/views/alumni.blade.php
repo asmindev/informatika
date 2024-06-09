@@ -8,7 +8,7 @@
             @foreach ($alumnis as $alumni)
             <div class="w-full relative h-[80] rounded-t-xl overflow-hidden">
                 <img src="{{ $alumni->image }}" alt="{{ $alumni->name }}" class="w-full h-full object-cover">
-                <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black via-black/80 to-transparent">
+                <div class="absolute bottom-0 left-0 w-full h-[80] bg-gradient-to-t from-black via-black/80 to-transparent">
                     <div class="w-full h-full flex flex-col justify-end p-4">
                         <div class="text-center">
                             <h1 class="text-white font-medium">{{ $alumni->name }}</h1>
