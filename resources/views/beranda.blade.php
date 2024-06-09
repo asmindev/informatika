@@ -35,7 +35,7 @@
                 <div class="absolute bottom-0 h-12 md:w-full z-50">
                     <div class="w-full bg-blue-600 rounded-xl">
                         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 text-center">
-                            <a href="https://ta.ti.eng.uho.ac.id/" class="p-4 md:p-8 bg-white rounded-lg">
+                            <a href="https://ta.ti.eng.uho.ac.id/" target="_blank" class="p-4 md:p-8 bg-white rounded-lg">
                                 <h1 class="text-sm md:text-base">Sistem Monitoring TA</h1>
                             </a>
                             <a href="#" class="p-4 md:p-8 bg-white rounded-lg">
@@ -47,10 +47,10 @@
                             <a href="#" class="p-4 md:p-8 bg-white rounded-lg">
                                 <h1 class="text-sm md:text-base">Sistem Monitoring Perkuliahan</h1>
                             </a>
-                            <a href="https://ojs.uho.ac.id/index.php/semantik" class="p-4 md:p-8 bg-white rounded-lg">
+                            <a href="https://ojs.uho.ac.id/index.php/semantik" target="_blank" class="p-4 md:p-8 bg-white rounded-lg">
                                 <h1 class="text-sm md:text-base">Jurnal Semantik</h1>
                             </a>
-                            <a href="https://animator.uho.ac.id" class="p-4 md:p-8 bg-white rounded-lg">
+                            <a href="https://animator.uho.ac.id" target="_blank" class="p-4 md:p-8 bg-white rounded-lg">
                                 <h1 class="text-sm md:text-base">Jurnal Animator</h1>
                             </a>
                         </div>
