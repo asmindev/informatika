@@ -20,7 +20,6 @@
                 </div>
             </div>
         </div>
-
         <div class="relative z-50 mt-12 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <a href="#" class="w-full block h-full bg-gradient-to-br from-pink-400 to-pink-600 rounded-3xl p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bg-pink-400 rounded-full p-2 size-12 text-pink-200">
