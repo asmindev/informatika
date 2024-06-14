@@ -3,14 +3,22 @@
         class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[90vh] flex flex-col justify-center items-center">
         <div class="w-full h-full flex flex-col-reverse gap-y-12 md:flex-row items-stretch">
             <div class="w-full md:w-2/3 min-h-full flex items-end">
-                <div class="w-full flex flex-col gap-y-2">
-                    <h2 class="text-xl md:text-5xl font-bold md:font-extrabold text-gray-700">Selamat Datang di Jurusan
-                    </h2>
+                <div class="w-full flex flex-col gap-y-2 mb-16">
+                    <h2 class="text-xl md:text-5xl font-bold md:font-extrabold text-gray-700">Selamat Datang di Jurusan</h2>
                     <h1 class="text-4xl md:text-7xl font-bold md:font-extrabold text-orange-500">Teknik Informatika</h1>
                     <h3 class="text-xl font-semibold text-gray-700">Fakultas Teknik, Universitas Haluoleo, Kendari</h3>
-                    <div>
-                        <button type="button"
-                            class="mt-2 bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-2xl">Jelajahi</button>
+                    <div class="mt-8 w-full md:w-10/12 flex items-center gap-12">
+                        <button type="button" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-2xl">Jelajahi</button>
+                        <div class="flex items-center gap-x-8">
+                            <div class="">
+                                <h1 class="text-3xl md:text-4xl font-bold text-gray-600">{{ $alumniesTotal }}</h1>
+                                <h3 class="text-sm text-gray-800">Total Alumni</h3>
+                            </div>
+                            <div class="">
+                                <h1 class="text-3xl md:text-4xl font-bold text-gray-600">{{ $receptionsTotal }}</h1>
+                                <h3 class="text-sm text-gray-800">Total Mahasiswa</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -26,7 +34,6 @@
                 </div>
             </div>
         </div>
-
         <div class="relative z-50 mt-12 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <a href="#" class="w-full block h-full bg-gradient-to-br from-pink-400 to-pink-600 rounded-3xl p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
