@@ -1,12 +1,17 @@
-<header class="relative z-[999999] flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-blue-600 text-sm py-8 dark:bg-neutral-800">
+<header class="relative z-[999999] flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-blue-900 text-sm py-8 dark:bg-neutral-800">
     <nav class="w-full md:w-11/12 lg:w-10/12 mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
         <div class="flex items-center justify-between">
             <a class="font-semibold text-slate-100 flex flex-col" href="/">
-                <span>Teknik</span>
-                <span>Informatika</span>
+                <div class="flex gap-1 items-center">
+                    <img src="{{ asset('assets/uho.png') }}" alt="Universitas Haluoleo" class="size-16 object-cover">
+                    <div class="text-xl">
+                        <span>Teknik</span>
+                        <span>Informatika</span>
+                    </div>
+                </div>
             </a>
             <div class="sm:hidden">
-                <button type="button" class="hs-collapse-toggle" data-hs-collapse="#navbar-with-mega-menu" aria-controls="navbar-with-mega-menu" aria-label="Toggle navigation">
+                <button type="button" class="hs-collapse-toggle text-white" data-hs-collapse="#navbar-with-mega-menu" aria-controls="navbar-with-mega-menu" aria-label="Toggle navigation">
                     <svg class="hs-collapse-open:hidden flex-shrink-0 size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="3" x2="21" y1="6" y2="6" />
                         <line x1="3" x2="21" y1="12" y2="12" />
@@ -126,11 +131,11 @@
                             E-Library IT
                         </a>
                         <a href="https://ojs.uho.ac.id/index.php/semantik" target="_blank" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="#">
-                           Jurnal Semantik
+                            Jurnal Semantik
                         </a>
                         <a href="https://animator.uho.ac.id" target="_blank" class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="#">
                             Jurnal Animator
-                         </a>
+                        </a>
                     </div>
                 </div>
 
