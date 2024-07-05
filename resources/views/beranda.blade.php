@@ -26,7 +26,7 @@
                 <div class="w-full md:w-1/3 md:scale-110 h-full rounded-full overflow-hidden">
                     <div class="relative w-full h-full md:p-10 before:md:absolute before:bg-indigo-600/50 before:w-full before:h-full before:blur-xl after:absolute after:bg-red-600 after:w-full after:h-12 after:left-0 after:bottom-24 after:-z-10">
                         <div class="relative w-full border-b border-orange-600 rounded-full overflow-hidden h-[22rem] before:absolute before:bg-indigo-500 before:bottom-0 before:w-full before:h-2/6 before:md:h-1/2 before:blur-xl">
-                            <img src="{{ asset('assets/avatar.png') }}" alt="Avatar" class="w-full md:h-full absolute bottom-0 object-cover">
+                            <img src="{{ asset('assets/avatar.jpeg') }}" alt="Avatar" class="w-full md:h-full absolute bottom-0 object-cover">
                         </div>
                     </div>
                 </div>
