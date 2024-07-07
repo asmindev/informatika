@@ -1,5 +1,5 @@
 <x-layout>
-    <section class="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-neutral-100 via-neutral-200 to-neutral-50">
+    <section class="w-full h-full bg-custom-radial">
         <section class="px-4 w-full md:w-11/12 lg:w-10/12 mx-auto py-12 min-h-[90vh] flex flex-col justify-center items-center">
             <div class="w-full h-full flex flex-col-reverse gap-y-12 md:flex-row items-stretch">
                 <div class="w-full md:w-2/3 min-h-full flex items-end">
