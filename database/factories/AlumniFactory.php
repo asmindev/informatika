@@ -19,7 +19,7 @@ class AlumniFactory extends Factory
         return [
             //
             'name' => $this->faker->name(),
-            'nim' => $this->faker->randomNumber(8),
+            'job_title' => $this->faker->jobTitle(),
             'graduation_year' => $this->faker->year(),
             'image' => $this->faker->imageUrl(640, 480),
         ];

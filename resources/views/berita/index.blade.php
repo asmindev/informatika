@@ -14,7 +14,7 @@
                             <h1 class="text-slate-800 font-medium text-lg">{{ $n->title }}</h1>
                             <h2 class="text-slate-600 text-sm">{{ $n->date }}</h2>
                         </div>
-                        <h3 class="text-slate-600 text-sm line-clamp-2">{{ $n->content }}</h3>
+                        <h3 class="text-slate-600 text-sm line-clamp-2">{!! $n->content !!}</h3>
                     </div>
                 </div>
             </a>

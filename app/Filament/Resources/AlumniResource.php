@@ -28,10 +28,11 @@ class AlumniResource extends Resource
                     ->label('Nama')
                     ->placeholder("Masukkan Nama")
                     ->required(),
-                Forms\Components\TextInput::make('nim')
-                    ->label('NIM')
-                    ->placeholder("Masukkan NIM")
+                Forms\Components\TextInput::make('job_title')
+                    ->label('Pekerjaan')
+                    ->placeholder("Masukkan Pekerjaan")
                     ->required(),
+
                 Forms\Components\TextInput::make('graduation_year')
                     ->label('Tahun Lulus')
                     ->type('number')
@@ -48,14 +49,19 @@ class AlumniResource extends Resource
         return $table
             ->columns([
                 //
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                    ->label('Foto'),
                 Tables\Columns\TextColumn::make('name')
+                    ->label('Nama')
                     ->sortable()
                     ->searchable(),
-                Tables\Columns\TextColumn::make('nim')
+                Tables\Columns\TextColumn::make('job_title')
+                    ->label('Pekerjaan')
                     ->sortable()
                     ->searchable(),
+
                 Tables\Columns\TextColumn::make('graduation_year')
+                    ->label('Tahun Lulus')
                     ->sortable()
             ])->defaultSort('created_at', 'desc')
             ->filters([

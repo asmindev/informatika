@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('image')->nullable();
-            $table->string('nim');
+            $table->string('job_title');
             $table->string('graduation_year');
             $table->timestamps();
         });
