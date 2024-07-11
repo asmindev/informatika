@@ -7,7 +7,7 @@
         </div>
         <div class="my-24">
             <h1 class="font-semibold">
-                Visi & Misi Jurusan Teknik Informatika UHO
+                Visi & Misi Jurusan Teknik Informatika UHO 2023
             </h1>
             <article>
                 <h5 class="mt-4 text-slate-800 font-semibold">Visi</h5>

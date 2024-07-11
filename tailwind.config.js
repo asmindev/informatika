@@ -10,6 +10,7 @@ export default {
         "./app/Filament/**/*.php",
         "./resources/views/filament/**/*.blade.php",
         "./vendor/filament/**/*.blade.php",
+        "./node_modules/flowbite/**/*.js"
     ],
     theme: {
         extend: {
@@ -25,5 +26,5 @@ export default {
             },
         },
     },
-    plugins: [require("preline/plugin")],
+    plugins: [require("preline/plugin"),require('flowbite/plugin')],
 };
